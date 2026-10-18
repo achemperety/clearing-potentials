@@ -1,0 +1,8 @@
+n=3:
+digraphs 16, unilateral 11, not SCC-symmetric 3, not clearable 0, of which pass the back-arc test 0
+n=4:
+digraphs 218, unilateral 171, not SCC-symmetric 111, not clearable 0, of which pass the back-arc test 0
+n=5:
+digraphs 9608, unilateral 8603, not SCC-symmetric 7769, not clearable 0, of which pass the back-arc test 0
+n=6:
+digraphs 1540944, unilateral 1478644, not SCC-symmetric 1455375, not clearable 843, of which pass the back-arc test 145

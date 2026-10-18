@@ -1,0 +1,34 @@
+Exhaustive Groebner cross-checks on three six-vertex digraphs with a set potential (Section 28.5).
+Every graph U up to Aut(D) surviving the pruning (locality, no phantom) is decided by a saturated Groebner basis
+over Q(z) of the identities at all reachable positions, as by  python3 scf_groebner.py search '<spec>'  (mode plain).
+Lines '... k p t s' are progress: k graphs tested, p potentials, t timeouts (per-graph limit 120 s), s seconds.
+Digraphs:
+  '{"name":"C4(1,2,1,2)","n":6,"arcs":[[0,1],[0,2],[1,3],[2,3],[3,4],[3,5],[4,0],[5,0]]}'
+  '{"name":"C3+pend(1,1,1)","n":6,"arcs":[[0,1],[1,2],[2,0],[0,3],[3,0],[1,4],[4,1],[2,5],[5,2]]}'
+  '{"name":"C4+pend(0,2)","n":6,"arcs":[[0,1],[1,2],[2,3],[3,0],[0,4],[4,0],[2,5],[5,2]]}'
+
+... 1000 0 0 97
+... 2000 0 0 209
+... 3000 0 0 328
+{"name": "C4(1,2,1,2)", "auts": 8, "orbits": 4808, "tested": 3466, "positive": [], "timeouts": [], "time": 391.6}
+... 1000 0 0 93
+... 2000 0 0 196
+... 3000 0 0 311
+... 4000 0 0 460
+... 5000 0 0 587
+... 6000 0 0 717
+... 7000 0 0 847
+{"name": "C3+pend(1,1,1)", "auts": 3, "orbits": 10944, "tested": 7536, "positive": [], "timeouts": [], "time": 924.1}
+... 1000 0 0 77
+... 2000 0 0 157
+... 3000 0 0 250
+... 4000 0 0 347
+... 5000 0 0 438
+... 6000 0 0 535
+... 7000 0 0 610
+... 8000 0 0 672
+... 9000 0 0 730
+... 10000 0 0 821
+... 11000 0 0 940
+... 12000 0 0 1037
+{"name": "C4+pend(0,2)", "auts": 2, "orbits": 16640, "tested": 12170, "positive": [], "timeouts": [], "time": 1057.0}

@@ -1,0 +1,45 @@
+Exhaustive searches over all graphs U for the 13 unilateral 6-vertex digraphs of Proposition 28.3
+(data/unilateral6_nonclearable_setpot.json, in that order).  Every graph U up to the automorphisms of D that
+survives the field-independent pruning (locality [ALC Thm 10.8], no phantom [ALC Thm 10.6]) is decided exactly as
+by  python3 scf_groebner.py search '{"n":6,"arcs":...}' clearing :  the weights of vertices with a clearing set are
+fixed by the cavity identity (Lemma 26.5, a consequence of the identities), and the remaining identities at all
+reachable positions are saturated by every Phi(W) over Q(z).  "unit" means the ideal is the unit ideal, so U
+carries no potential over any field.  The runs used a checkpointing driver with a per-graph limit of 300 s;
+a digraph counts as decided only if every graph was tested and none timed out.  Its outcome labels "unit" and
+"unit after saturation" are scf_groebner's "unit ideal" and "unit ideal after saturation".
+
+#00 arcs [[3, 0], [4, 0], [0, 5], [4, 1], [1, 5], [5, 2], [5, 4]]
+    |Aut D| = 1; graphs U up to symmetry 32768; tested after pruning 25930; outcomes {'unit after saturation': 56, 'unit': 25874}; timeouts 0; potentials 0; 2417 s  -> no potential over any field
+#01 arcs [[3, 0], [4, 0], [0, 5], [4, 1], [1, 5], [2, 5], [5, 2], [5, 4]]
+    |Aut D| = 1; graphs U up to symmetry 32768; tested after pruning 24452; outcomes {'unit after saturation': 17, 'unit': 24435}; timeouts 0; potentials 0; 3416 s  -> no potential over any field
+#02 arcs [[0, 3], [5, 0], [1, 4], [4, 1], [2, 4], [3, 5], [4, 5]]
+    |Aut D| = 1; graphs U up to symmetry 32768; tested after pruning 26724; outcomes {'unit': 26640, 'unit after saturation': 84}; timeouts 0; potentials 0; 3236 s  -> no potential over any field
+#03 arcs [[0, 3], [5, 0], [1, 4], [4, 1], [2, 4], [4, 2], [3, 5], [4, 5]]
+    not run  -> undecided
+#04 arcs [[3, 0], [0, 5], [5, 0], [4, 1], [1, 5], [4, 2], [2, 5], [5, 4]]
+    not run  -> undecided
+#05 arcs [[0, 3], [5, 0], [1, 4], [1, 5], [2, 4], [4, 2], [3, 5], [4, 5]]
+    not run  -> undecided
+#06 arcs [[0, 3], [0, 4], [1, 3], [5, 1], [2, 4], [4, 2], [3, 5], [4, 5]]
+    not run  -> undecided
+#07 arcs [[0, 3], [0, 4], [3, 1], [1, 5], [2, 4], [4, 2], [5, 3], [4, 5]]
+    not run  -> undecided
+#08 arcs [[3, 0], [4, 0], [0, 5], [3, 1], [1, 5], [4, 2], [5, 2], [5, 3]]
+    not run  -> undecided
+#09 arcs [[0, 3], [0, 4], [0, 5], [1, 3], [5, 1], [2, 4], [4, 2], [3, 5], [4, 5]]
+    not run  -> undecided
+#10 arcs [[0, 3], [0, 4], [0, 5], [3, 1], [1, 5], [2, 4], [4, 2], [5, 3], [4, 5]]
+    not run  -> undecided
+#11 arcs [[0, 3], [0, 4], [0, 5], [1, 3], [4, 1], [5, 1], [2, 4], [4, 2], [3, 5]]
+    not run  -> undecided
+#12 arcs [[0, 2], [4, 0], [5, 0], [1, 3], [3, 1], [1, 4], [5, 1], [2, 4], [5, 2], [5, 4]]
+    not run  -> undecided
+
+decided: 3 of 13 (no potential); undecided: 10
+
+Cross-check with the code in this folder: scf_groebner.orbit_reps and prune_ok give the same numbers of graphs
+after pruning, and a random sample of graphs U (random.Random(k).sample, k = digraph index) decided by
+scf_groebner.Decider(D).decide(U, "clearing") gives no potential:
+#00: graphs after pruning 25930; sample 150; outcomes {'unit ideal': 150}; potentials 0
+#01: graphs after pruning 24452; sample 150; outcomes {'unit ideal': 149, 'unit ideal after saturation': 1}; potentials 0
+#02: graphs after pruning 26724; sample 150; outcomes {'unit ideal': 149, 'unit ideal after saturation': 1}; potentials 0

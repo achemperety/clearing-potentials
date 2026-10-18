@@ -1,0 +1,33 @@
+Uniqueness of potentials on connected graphs with at most five vertices (Remark 28.4; scf_groebner.py symmetric 5).
+Columns: n, edges of G, the graphs U other than G that carry a potential (up to Aut(G)), whether U = G forces a = z
+(a_x - z in the radical of the saturated ideal), seconds.
+
+3 [(0, 1), (0, 2)] other U with potential: [] U=G forces a=z: True 0.2
+3 [(0, 1), (0, 2), (1, 2)] other U with potential: [] U=G forces a=z: True 0.1
+4 [(0, 3), (1, 3), (2, 3)] other U with potential: [] U=G forces a=z: True 0.3
+4 [(0, 1), (0, 3), (1, 2)] other U with potential: [] U=G forces a=z: True 0.5
+4 [(0, 3), (1, 2), (1, 3), (2, 3)] other U with potential: [] U=G forces a=z: True 0.3
+4 [(0, 1), (0, 3), (1, 2), (2, 3)] other U with potential: [] U=G forces a=z: True 0.5
+4 [(0, 1), (0, 2), (0, 3), (1, 2), (2, 3)] other U with potential: [] U=G forces a=z: True 0.3
+4 [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)] other U with potential: [] U=G forces a=z: True 0.3
+5 [(0, 4), (1, 4), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 0.9
+5 [(0, 4), (1, 3), (2, 3), (3, 4)] other U with potential: [] U=G forces a=z: True 13.7
+5 [(0, 1), (0, 4), (1, 2), (2, 3)] other U with potential: [] U=G forces a=z: True 16.6
+5 [(0, 4), (1, 4), (2, 3), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 1.9
+5 [(0, 1), (0, 2), (0, 4), (1, 2), (2, 3)] other U with potential: [] U=G forces a=z: True 10.5
+5 [(0, 4), (1, 2), (1, 3), (2, 3), (3, 4)] other U with potential: [] U=G forces a=z: True 14.4
+5 [(0, 1), (1, 3), (1, 4), (2, 3), (2, 4)] other U with potential: [] U=G forces a=z: True 17.4
+5 [(0, 1), (0, 4), (1, 2), (2, 3), (3, 4)] other U with potential: [] U=G forces a=z: True 6.0
+5 [(0, 1), (1, 2), (1, 3), (1, 4), (2, 3), (2, 4)] other U with potential: [] U=G forces a=z: True 2.6
+5 [(0, 1), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 11.3
+5 [(0, 1), (0, 4), (1, 4), (2, 3), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 1.8
+5 [(0, 1), (0, 3), (0, 4), (1, 2), (2, 3), (3, 4)] other U with potential: [] U=G forces a=z: True 14.2
+5 [(0, 2), (0, 3), (0, 4), (1, 2), (1, 3), (1, 4)] other U with potential: [] U=G forces a=z: True 4.5
+5 [(0, 4), (1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 1.6
+5 [(0, 3), (0, 4), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 1.1
+5 [(0, 1), (0, 4), (1, 2), (1, 3), (1, 4), (2, 3), (3, 4)] other U with potential: [] U=G forces a=z: True 2.8
+5 [(0, 2), (0, 3), (0, 4), (1, 2), (1, 3), (1, 4), (2, 4)] other U with potential: [] U=G forces a=z: True 7.5
+5 [(0, 1), (0, 3), (0, 4), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 1.1
+5 [(0, 1), (0, 3), (0, 4), (1, 2), (1, 4), (2, 3), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 1.7
+5 [(0, 1), (0, 3), (0, 4), (1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 0.8
+5 [(0, 1), (0, 2), (0, 3), (0, 4), (1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)] other U with potential: [] U=G forces a=z: True 0.7

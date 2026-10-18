@@ -1,0 +1,64 @@
+# MANIFEST: clearing-potentials
+
+58 files. Check with `sha256sum` (or `shasum -a 256`) against the table.
+
+| file | bytes | SHA-256 |
+|---|---:|---|
+| `LICENSE` | 1072 | `485668bff61b8c6583e86cb0d425e9fed0569db62c978e3b0d675f6aeaba8e15` |
+| `README.md` | 4534 | `76d7552869479b23bd6cfa5d87aeca9198b39590215f8f9b105209b7fdccef69` |
+| `requirements.txt` | 253 | `2fbe3a8693cf82b724eda286185df9726cdcc8fff3419a332b17b14b3c49a611` |
+| `csrc/census.c` | 5903 | `dc5c3213a6ea1608882126f3dab9012f17b1638c62b24e237da49a8bf47d78dd` |
+| `csrc/census_backarc.c` | 5848 | `7a8c4ac719000020dc61d28ab04b46491095458e5c15f9687451c866013ab2ac` |
+| `csrc/census_unilateral.c` | 6675 | `55304079edf7059b10ed8a3af9913a20601c2b58a96333ee6f75579829661393` |
+| `csrc/earlier/clearall.c` | 4230 | `3e452d4a3e0c3784e82c702a0afe4342a51994384c5a42d24f7a444ae5fcf5f3` |
+| `csrc/earlier/clearfilter.c` | 3928 | `e8f40e9f1253edccc97cef4305455b960462785a08b8c528a6343adfea89034f` |
+| `csrc/earlier/clearfilter_uni.c` | 4584 | `60000c3cad2a00dbfca346f9d134324c86885eed8355e0b105f93e9777c3265b` |
+| `data/n7_gamma_certificates.json` | 14751 | `e84ff5a1157a557576df62c477e93f07daafa4632050a2531a8e66169e11e80e` |
+| `data/n7_survivors.txt` | 3468 | `60f2791eb2c66583487a8591c879d405e3ba2f6f493e83bc3d480dea2a965859` |
+| `data/strong6_backarc_survivors.txt` | 3183 | `b6b6d6e5258fb185384b60bae837266df1f67f248d23d474e43fa630415ebcef` |
+| `data/unilateral6_setpot13.json` | 882 | `c263d307057c710f414d174330f6c5f1de23f77ef3670b2800a95991f4d90dd8` |
+| `data/unilateral6_survivors.txt` | 5285 | `2c94833392d8b442816fa00f0cce81c54e46a00605e7dfd87a1cc0a9cf707199` |
+| `groebner/scf_c4pendants.py` | 5326 | `f10b2d1fd7ff3f7983f84f0b4b87bbadbaf300873d1bcbe3b928624d36e1584e` |
+| `groebner/scf_core.py` | 20383 | `b002ebabe0759009b4431dad5e81c282ca3507b63dd723b13948f0913bea4518` |
+| `groebner/scf_groebner.py` | 40460 | `74231bf233d675ee2854db4545c80279764ae9be6b4df13f7c897cfa0d3fa5d5` |
+| `groebner/unilateral_open.py` | 1535 | `a048d00b62f0d7727c5b192c0ff9883146242af8e17ac99dd2c11370812d151e` |
+| `logs/census_n3.err` | 142 | `22cc28bb6bb5310a77145121d52d7172390e4c2ae21243cdc7510aca2430d25d` |
+| `logs/census_n4.err` | 146 | `61f308a79b18a9f1591ca768147178d05ded7297330a20bfabef7448fa13fd34` |
+| `logs/census_n5.err` | 153 | `9b5748727e6496de4a4fedc4680f2a394d1894fcb3824e2d3f3066218cc1e69d` |
+| `logs/census_n6.err` | 165 | `ca8213bd27cd55abf97a8a329e5f870c605d66a812ffffdbc2b41673867a2c4e` |
+| `logs/census_n7_part0.err` | 176 | `e7b7ca7b0f2f56fa157e03be520984c963cae01791be78552f47327dc7e6c354` |
+| `logs/census_n7_part1.err` | 176 | `1a9a18ed4d956dc6b7857554acb6125a08c29332f697df278d1d5e63641561bf` |
+| `logs/census_unilateral_n3.err` | 139 | `06f75725af158c889d897e1e15af82bf9dc7990fb7f4bfaf4bc6a53a711c8861` |
+| `logs/census_unilateral_n4.err` | 145 | `c3d8f7a898109842cb9d63621b8d422ee4025ef2bc299d1f5db71225cd36c835` |
+| `logs/census_unilateral_n5.err` | 149 | `5eec86db9cd02ec6c0b232320f2619b95a1efe685b1f1239d560288fe90c9b55` |
+| `logs/census_unilateral_n6.err` | 165 | `35e2e8ae1cff61c14f0be4608f1fc87661b3527c560ea741b873c97c561b7eb2` |
+| `logs/certify_n7.txt` | 88 | `3dff0e0aa0d2131148209deee0293ce77ccc8ebefa77917ed8d5e07fe1c0fd65` |
+| `logs/certify_unilateral6.txt` | 793 | `e0f2e96f98ab9ec1221bc19e1cd3798fab725101d12c5a2d14fc4e0af1b63dc4` |
+| `logs/verify_all.txt` | 4367 | `3d801e4da7a81dba51f22cce4af34b189462b4bd0a49952d98751d95212d7e9a` |
+| `logs/earlier/branch_decisions.txt` | 5845 | `c8de8044dffbaeaf82ff07a38025ac3492fb2d0d0c6394418d2a854bfd846cb7` |
+| `logs/earlier/c4pendants_modular.txt` | 842 | `2f5042a2140e389ddfd0ede85b282548760e5716052d84a3c1e6c2f0ef806698` |
+| `logs/earlier/c_directg_n3_6.txt` | 460 | `44be2a1772f163b326f3bdffd56e99a482fd8f3009970a9726bc3ed00a702352` |
+| `logs/earlier/c_directg_n7.txt` | 2592 | `4396673eda4242c3da1499629eb6241fbf34fc6d63f8120e5630c3ab81a03d11` |
+| `logs/earlier/c_directg_unilateral_n3_6.txt` | 451 | `5fc7182827625d120ea52d9543a5b4cb1eaec5e046ad719c914093509189b819` |
+| `logs/earlier/c_labeled_n3_6.txt` | 486 | `6e6e9c1d6dd5824d2a5f39602998779f06c785c0316969f9509ba7fbf24015d2` |
+| `logs/earlier/groebner_crosscheck_6v.txt` | 1458 | `19d199f5230764d47815ed04d641263fde1abbbf27be8003f7cb34286a5c956b` |
+| `logs/earlier/groebner_symmetric_n5.txt` | 3173 | `b5f2fecbd2e096bef95f6e158b23b969b727ca49a6790c70b5811f1649b429d0` |
+| `logs/earlier/unilateral6_groebner.txt` | 3463 | `9624356ad02ed0ecce57299e873c9aee81bfbef0a73331946c598eae7fa54adb` |
+| `logs/reruns/groebner_c3_legs222.txt` | 667 | `b94fd77a3f9cca32fdd9155b7e8cd4d2280a17cbe1a275b28c233d0255d90ad6` |
+| `logs/reruns/groebner_c3_p222.txt` | 962 | `6b53ab2d94ccbca1f9f26beb8ec67914e09819d216ce448eef9b7217055a14a2` |
+| `logs/reruns/groebner_c4_legs2020.txt` | 200 | `cacfedc89942e580abdf86dff7946af814adcfbb774fdb38d45ef8fb01197298` |
+| `logs/reruns/groebner_c4_p1111.txt` | 536 | `b3435a556721f2d39e1e162db7453445617c81eedb9bf80e8b7d8dd0414e0a41` |
+| `logs/reruns/groebner_c4_p2020.txt` | 196 | `ab80385d52688997e1493fe6ba41a40b29ad28a491b5b2483fcf2e9bdc6367b0` |
+| `logs/reruns/groebner_c5_p11111.txt` | 584 | `df601c8fd9c6c94962900cd101317e97361b5529d5bd1ed892b28b54a88a74aa` |
+| `logs/reruns/groebner_c6_p101010.txt` | 953 | `3f2836b9f342cbd0bbed5608db140dc0c8ff793a831e99585ea1e072eb007888` |
+| `logs/reruns/labelled_n3_6_clearall.txt` | 486 | `6e6e9c1d6dd5824d2a5f39602998779f06c785c0316969f9509ba7fbf24015d2` |
+| `logs/reruns/unilateral6_groebner_03_04.txt` | 1271 | `8ea6f9c9db80061609fcbbd4518b6a42e859fcbda2c3e61f6b11a68291942b48` |
+| `potentials/__init__.py` | 678 | `aa7443aa10375db7a59a6a7c03bccf07dc0e4c8168ad0f75e59fdeb2a473d8c2` |
+| `potentials/clearing.py` | 3567 | `301061f98cab8dfe9a1ba3b6f99ad1cbe17fdfaa2f76f4ac273425c38f519ac9` |
+| `potentials/dvg.py` | 8609 | `4e1491bf053470e346b9c59a53a1156c1a70a3fe7cea2b5d6234456ccdbfe1d1` |
+| `potentials/families.py` | 4304 | `23cf33a8fe5ad95778e26ecc2dc065fcf6cd2c9be25c538ff922655a4a4388ba` |
+| `potentials/potential.py` | 2305 | `e4f0746a5e225501f48091eb0389dd0d362ca626b8c09fb9d0dee0ee60e5e8b0` |
+| `potentials/qz.py` | 6467 | `f41936f786ccfc12cee938a27390f7611a4a636ecf3eaf3c9f1c2c06ee1aa440` |
+| `scripts/certify_survivors.py` | 2710 | `ec4bc94b60321fbac27c3eed84a125d70e64c6a2420ba99966b2041a3290cfce` |
+| `scripts/verify_all.py` | 16286 | `114377152a782d22e889d8921bfa8238036256d367100de69f028745681553ad` |
+| `tests/test_potentials.py` | 3454 | `ebd40da3c4b3c38a5a50ce2421e108e1033d0ca89aba16df7e1211613b768369` |

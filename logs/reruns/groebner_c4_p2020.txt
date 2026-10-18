@@ -1,0 +1,2 @@
+step 1: 19 graphs H up to symmetry, 71 pairs (H, prime), 9s
+n=8: {'components': 71, 'real': 62, 'nonreal': 9, 'killed_at_layer1': 9, 'layer1_empty_at': {1: 9, 3: 9}, 'nodes': 0}; survivors 0; 10s

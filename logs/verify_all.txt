@@ -1,0 +1,53 @@
+
+Section 2: resolvents and potentials
+------------------------------------
+  [ok]   Lemma 2.1: R(W,v) = 1/z + 0/z^2 + d^+_W(v)/z^3 + ... at every reachable position
+  [ok]   Lemma 2.2: numerator and denominator monic in Z[z], deg den = deg num + 1
+  [ok]   Theorem 2.7: the directed-collapse potential satisfies every identity (random SCC-symmetric digraphs)
+  [ok]   Lemma 2.5: cavity identity at every reachable position of these potentials
+  [ok]   Lemma 2.3: Gamma(P) = M(V - V(P)) / M(V) along plays
+
+Section 3: clearing positions
+-----------------------------
+  [ok]   Lemma 3.1: every end x of a directed Hamiltonian path has a_x = z (directed-collapse potentials); ({x},x) is reachable with R = 1/z  37 vertices
+  [ok]   certificates of N_inf re-checked path by path (random digraphs)
+  [ok]   Lemma 3.5: incomparable vertices are never cleared
+  [ok]   Proposition 3.8: if N_inf != V, no path set contains V - N_inf
+  [ok]   Example 3.7: alpha = (alpha^2 - 1)/z holds in Q(z)[alpha]/(alpha^2 - z alpha - 1)
+
+Section 4: families
+-------------------
+  [ok]   Theorem 4.3: blow-ups C_m(s), m <= 8, s_i <= 3, n <= 12, up to rotation, are fully clearable  (293 blow-ups)
+  [ok]   Remark 4.4: two-periodic blow-ups with s0 != s1 have a set potential and no Hamiltonian path
+  [ok]   Theorem 4.5 / Corollary 1.4(a): random tournaments are fully clearable; transitive ones carry the collapse potential with U empty
+  [ok]   Theorem 4.5: digraphs with a planted directed Hamiltonian path are fully clearable
+  [ok]   Corollary 4.2(b): strongly connected digraphs with a universal vertex are fully clearable
+  [ok]   Example 4.6: books with r-1 pendants (r <= 5), C4(2,1,1,1) with pendants, chains into cycles: fully clearable, with set potentials
+  [ok]   Table 1: the clearing certificate of C4(2,1,1,1) with pendant vertices
+
+Section 5: small digraphs
+-------------------------
+  [ok]   Theorem 5.1(2): census totals on seven vertices  {'digraphs': 880471142, 'strongly connected': 705422362, 'non-symmetric': 705421509, 'with Hamiltonian path': 704188642, 'not fully clearable': 1041, 'of these passing the back-arc test': 72}
+  [ok]   Theorem 5.1(1): n = 3, all 3 non-symmetric strongly connected classes fully clearable
+  [ok]   Theorem 5.1(1): n = 4, all 77 non-symmetric strongly connected classes fully clearable
+  [ok]   Theorem 5.1(1): n = 5, all 5027 non-symmetric strongly connected classes fully clearable
+  [ok]   Theorem 5.1(1): n = 6, all 1046896 non-symmetric strongly connected classes fully clearable
+  [ok]   Theorem 5.1(2): each of the 72 survivors has a Gamma-conflict at z = 7/3
+  [ok]   Proposition 5.2: 145 unilateral survivors = 132 Gamma-conflicts + 13 set potentials
+  [ok]   Remark 5.4: connected graphs on <= 5 vertices fully clearable; 108 of 112 on six; the four exceptions are trees that are neither paths nor stars  {1: [1, 1], 2: [1, 1], 3: [2, 2], 4: [6, 6], 5: [21, 21], 6: [112, 108]}
+
+Section 6: where clearing stops (Table 2)
+-----------------------------------------
+  [ok]   C4 pendants (1,1,1,1)                  n= 8, strongly connected, set potential, no Ham. path, outside N_inf as listed
+  [ok]   C4 pendants (2,0,2,0)                  n= 8, strongly connected, set potential, no Ham. path, outside N_inf as listed
+  [ok]   C4 legs of length 2 at c0,c2           n= 8, strongly connected, set potential, no Ham. path, outside N_inf as listed
+  [ok]   C6 pendants (1,0,1,0,1,0)              n= 9, strongly connected, set potential, no Ham. path, outside N_inf as listed
+  [ok]   C3 pendants (2,2,2)                    n= 9, strongly connected, set potential, no Ham. path, outside N_inf as listed
+  [ok]   C3 legs of length 2                    n= 9, strongly connected, set potential, no Ham. path, outside N_inf as listed
+  [ok]   C5(2,1,1,1,1) pendants at x1,x2,x3     n= 9, strongly connected, set potential, no Ham. path, outside N_inf as listed
+  [ok]   C5 pendants (1,1,1,1,1)                n=10, strongly connected, set potential, no Ham. path, outside N_inf as listed
+  [ok]   C4(3,1,1,1) two pendants at x1,x2      n=10, strongly connected, set potential, no Ham. path, outside N_inf as listed
+  [ok]   C3 with one pendant per vertex: fully clearable (Section 5, after Theorem 5.1)
+  [ok]   C4 with pendants at two opposite vertices: fully clearable (Section 5, after Theorem 5.1)
+
+36 checks, 0 failed, 16.2 s

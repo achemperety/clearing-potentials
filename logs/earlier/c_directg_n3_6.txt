@@ -1,0 +1,8 @@
+n=3:
+digraphs 16, strongly connected 5, non-symmetric 3, not clearable 0, of which pass the back-arc test 0
+n=4:
+digraphs 218, strongly connected 83, non-symmetric 77, not clearable 0, of which pass the back-arc test 0
+n=5:
+digraphs 9608, strongly connected 5048, non-symmetric 5027, not clearable 0, of which pass the back-arc test 0
+n=6:
+digraphs 1540944, strongly connected 1047008, non-symmetric 1046896, not clearable 0, of which pass the back-arc test 0

@@ -1,0 +1,21 @@
+geng -q 7 i/16 | directg -T -q | clearfilter, for i = 0..15 (nauty 2.8.8; csrc/clearfilter.c)
+
+part  0/16: digraphs 7450205, strongly connected 2518429, non-symmetric 2518214, not clearable 589, of which pass the back-arc test 53  (20 s)
+part  1/16: digraphs 85025099, strongly connected 45318807, non-symmetric 45318434, not clearable 452, of which pass the back-arc test 19  (514 s)
+part  2/16: digraphs 202555389, strongly connected 147570066, non-symmetric 147569938, not clearable 0, of which pass the back-arc test 0  (1584 s)
+part  3/16: digraphs 15809131, strongly connected 14016649, non-symmetric 14016638, not clearable 0, of which pass the back-arc test 0  (262 s)
+part  4/16: digraphs 82185777, strongly connected 61912097, non-symmetric 61912021, not clearable 0, of which pass the back-arc test 0  (774 s)
+part  5/16: digraphs 213747225, strongly connected 187736638, non-symmetric 187736613, not clearable 0, of which pass the back-arc test 0  (2786 s)
+part  6/16: digraphs 101346810, strongly connected 84376125, non-symmetric 84376112, not clearable 0, of which pass the back-arc test 0  (1750 s)
+part  7/16: digraphs 24525180, strongly connected 23229631, non-symmetric 23229630, not clearable 0, of which pass the back-arc test 0  (597 s)
+part  8/16: digraphs 132441372, strongly connected 122300860, non-symmetric 122300851, not clearable 0, of which pass the back-arc test 0  (1966 s)
+part  9/16: digraphs 14804964, strongly connected 14344471, non-symmetric 14344470, not clearable 0, of which pass the back-arc test 0  (1089 s)
+part 10/16: digraphs 2142288, strongly connected 2098589, non-symmetric 2098588, not clearable 0, of which pass the back-arc test 0  (1613 s)
+part 11/16: digraphs 0, strongly connected 0, non-symmetric 0, not clearable 0, of which pass the back-arc test 0  (0 s)
+part 12/16: digraphs 0, strongly connected 0, non-symmetric 0, not clearable 0, of which pass the back-arc test 0  (0 s)
+part 13/16: digraphs 0, strongly connected 0, non-symmetric 0, not clearable 0, of which pass the back-arc test 0  (0 s)
+part 14/16: digraphs 0, strongly connected 0, non-symmetric 0, not clearable 0, of which pass the back-arc test 0  (0 s)
+part 15/16: digraphs 0, strongly connected 0, non-symmetric 0, not clearable 0, of which pass the back-arc test 0  (0 s)
+
+total over 16 of 16 parts: digraphs 882033440, strongly connected 705422362, non-symmetric 705421509, not clearable 1041, of which pass the back-arc test 72
+expected (OEIS A000273, A035512, A001349): digraphs 882033440, strongly connected 705422362, non-symmetric 705422362 - 853 = 705421509

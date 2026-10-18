@@ -1,0 +1,5 @@
+pytest>=7
+# optional:
+# networkx>=2.8              (Remark 5.4 in scripts/verify_all.py)
+# passagemath-singular>=10.4 (groebner/, exact Groebner bases over Q(z))
+# nauty (geng, directg) and a C compiler for the exhaustive censuses (not pip-installable)

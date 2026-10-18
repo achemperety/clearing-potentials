@@ -1,0 +1,4 @@
+n=3 labeled: strongly connected 18, non-symmetric 14, not clearable (refined) 0, of which pass the back-arc test 0
+n=4 labeled: strongly connected 1606, non-symmetric 1568, not clearable (refined) 0, of which pass the back-arc test 0
+n=5 labeled: strongly connected 565080, non-symmetric 564352, not clearable (refined) 0, of which pass the back-arc test 0
+n=6 labeled: strongly connected 734774776, non-symmetric 734748072, not clearable (refined) 0, of which pass the back-arc test 0

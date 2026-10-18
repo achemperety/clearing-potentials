@@ -1,0 +1,9 @@
+python3 scf_c4pendants.py   (seed 1, p = 2^61 - 1): modular cross-check of Corollary 29.10 for the 4-cycle with one pendant
+vertex per cycle vertex.  For each frozen pendant solution of Proposition 29.9, every graph on the pairs meeting the cycle
+(2^22, up to the rotations fixing U[P]) is evaluated at a point (z0, alpha0) of F_p with alpha0^2 = z0 alpha0 + 1;
+'survivors' would satisfy every identity.  Times are with other jobs running.
+
+positive control: standard potential of the symmetric digraph passes: True; perturbed U passes: False
+U[P] = {p0p2}, a = (alpha, z, alpha, z) on P                   graphs  2099200  survivors 0  (134s)
+U[P] = {p0p2, p1p3}, a = (alpha, z - alpha, alpha, z - alpha)  graphs  2099200  survivors 0  (166s)
+U[P] = {p0p2, p1p3}, a = alpha on P                            graphs  1049632  survivors 0  (80s)
